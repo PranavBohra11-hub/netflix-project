@@ -15,7 +15,7 @@ body {
   transform: translateY(15px);
   transition: 0.5s ease all;
   opacity: 0;
-  box-shadow: 0px 0px 10px 0.6px rgba(0, 0, 0, 0.521); 
+  box-shadow: 0px 0px 10px 0.6px rgba(0, 0, 0, 0.521);
 }
 
 #Language:checked ~ .LangList {
@@ -23,19 +23,149 @@ body {
   transform: translateY(5px);
   transition: 0.5s ease all;
 }
- 
+
 .LangList li {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .hero-section {
-    background-image: url(https://www.devicemag.com/wp-content/uploads/2023/03/netflix-error-22004-2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url(https://www.devicemag.com/wp-content/uploads/2023/03/netflix-error-22004-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-
 .UpperLayer {
-    background-color: rgba(0, 0, 0, 0.642);
+  background-color: rgba(0, 0, 0, 0.642);
+}
+
+@media (max-width: 768px) {
+  .CardOR {
+    border: 1px solid transparent;
+    width: 90vw;
+    margin: 50px auto;
+    height: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .Image {
+    border: 1px solid transparent;
+    height: 60%;
+  }
+  .Content {
+    border: 1px solid transparent;
+    height: 40%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1068px) {
+  .CardOR {
+    border: 1px solid transparent;
+    width: 95%;
+    margin: 50px auto;
+    height: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+  }
+
+  .Image {
+    border: 1px solid transparent;
+    width: 50%;
+  }
+  .Content {
+    border: 1px solid transparent;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1068px) {
+  .CardOR {
+    border: 1px solid transparent;
+    width: 70%;
+    margin: 50px auto;
+    height: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+  }
+
+  .Image {
+    border: 1px solid transparent;
+    width: 50%;
+  }
+  .Content {
+    border: 1px solid transparent;
+    width: 50%;
+  }
+}
+
+.Image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ImgOne {
+  background-image: url(https://wallpapercave.com/wp/wp7978475.jpg);
+}
+
+.ImgTwo {
+  background-image: url(https://www.backstageol.com/wp-content/uploads/2022/04/imgonline-com-ua-resize-kgIJ9ukFzE1-1000x563.jpg);
+}
+
+.ImgThree {
+  background-image: url(https://www.journaldugeek.com/content/uploads/2020/05/dark.jpg);
+}
+
+.ImgFour {
+  background-image: url(https://www.hollywoodinsider.com/wp-content/uploads/2021/12/The-Hollywood-Insider-The-Witcher.png);
+}
+
+.ImgFive {
+  background-image: url(https://static1.cbrimages.com/wordpress/wp-content/uploads/2024/11/squid-game.jpg);
+}
+
+.CardOR {
+  background-color: rgb(36, 36, 36);
+  box-shadow: 0px 0px 15px 0.5px white;
+}
+
+@media (min-width: 768px) {
+  .Content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .Content h1 {
+    margin-bottom: 30px;
+    font-size: 40px;
+  }
+
+  .ContentData p {
+    margin-top: 20px;
+  }
+}
+
+.SlideLogo {
+  border: 1px solid transparent;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url(https://static1.xdaimages.com/wordpress/wp-content/uploads/2022/05/netflix.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translateX(-100%);
+  transition: 0.7s ease all;
+}
+
+.CardOR:hover .SlideLogo {
+  transform: translateX(0%);
+  transition: 0.7s ease all;
 }
