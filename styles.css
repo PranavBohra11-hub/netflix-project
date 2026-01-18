@@ -3,10 +3,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
-}
-
-.NavHeader {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .LangList {
@@ -15,7 +12,7 @@ body {
   transform: translateY(15px);
   transition: 0.5s ease all;
   opacity: 0;
-  box-shadow: 0px 0px 10px 0.6px rgba(0, 0, 0, 0.521); 
+  box-shadow: 0px 0px 10px 0.6px rgba(0, 0, 0, 0.521);
 }
 
 #Language:checked ~ .LangList {
@@ -23,19 +20,135 @@ body {
   transform: translateY(5px);
   transition: 0.5s ease all;
 }
- 
+
 .LangList li {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .hero-section {
-    background-image: url(https://www.devicemag.com/wp-content/uploads/2023/03/netflix-error-22004-2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url(https://www.devicemag.com/wp-content/uploads/2023/03/netflix-error-22004-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-
 .UpperLayer {
-    background-color: rgba(0, 0, 0, 0.642);
+  background-color: rgba(0, 0, 0, 0.642);
+}
+
+@media (max-width: 568px) {
+  .MovieCard {
+    border: 2px solid gray;
+    width: 90%;
+    height: 550px;
+    margin: 10px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px 0.3px rgba(255, 0, 0, 0.568);
+    perspective: 1000px;
+    transition: 0.5s ease all;
+  }
+}
+
+@media (min-width: 568px) {
+  .MovieCard {
+    border: 2px solid gray;
+    width: 400px;
+    height: 550px;
+    margin: 10px auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 0.3px rgba(255, 0, 0, 0.568);
+    overflow: hidden;
+    perspective: 1000px;
+    transition: 0.5s ease all;
+  }
+}
+
+.ImgCard {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ImgCardOne {
+  background-image: url(https://static1.moviewebimages.com/wordpress/wp-content/uploads/2022/10/Daniel-Radcliffe-as-Harry-Potter-in-the-first-movie.jpg);
+}
+
+.ImgCardTwo {
+  background-image: url(https://media.criticalhit.net/2018/07/MissionImpossible_bg.jpg);
+}
+
+.ImgCardThree {
+  background-image: url(https://cdn.mos.cms.futurecdn.net/by8Tr8RPFkq7LEXQQ9cLcB-1200-80.jpg);
+}
+
+.ImgCardFour {
+  background-image: url(https://static1.srcdn.com/wordpress/wp-content/uploads/Lord-of-the-Rings.jpg);
+}
+
+.ImgCardFive {
+  background-image: url(https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2022/03/batman-final-explicado-pelicula-2022.jpeg);
+}
+
+.ImgCardSix {
+  background-image: url(https://www.rockrooster.gr/wp-content/uploads/2021/10/thumb-1920-1064725.jpg);
+}
+
+.CardFrame {
+  border: 1px solid transparent;
+  transform-style: preserve-3d;
+  position: relative;
+  transition: 0.6s ease all;
+}
+
+.MovieCard:hover .CardFrame {
+  transform: rotateY(180deg);
+}
+
+.FrontFace,
+.BackFace {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+  flex-direction: column;
+  border: 2px solid gray;
+}
+
+.FrontFace {
+  background-color: black;
+}
+
+.BackFace {
+  background-color: rgb(45, 45, 45);
+  transform: rotateY(180deg);
+}
+
+.BackFace h2 {
+  font-weight: 600;
+  font-size: 25px;
+  color: red;
+}
+
+.BackFace p {
+  color: white;
+  width: 90%;
+  font-size: 12px;
+}
+
+.SliderComes {
+  transform: translateY(-100%);
+  transition: 0.6s ease all;
+  opacity: 0;
+}
+
+.ImgCard:hover .SliderComes {
+  transform: translateY(0%);
+  transition: 0.6s ease all;
+  opacity: 1;
 }
