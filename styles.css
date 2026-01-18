@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.NavHeader {
+  font-family: "Roboto", sans-serif;
+}
+
+.LangList {
+  background-color: white;
+  border-radius: 10px;
+  transform: translateY(15px);
+  transition: 0.5s ease all;
+  opacity: 0;
+  box-shadow: 0px 0px 10px 0.6px rgba(0, 0, 0, 0.521); 
+}
+
+#Language:checked ~ .LangList {
+  opacity: 1;
+  transform: translateY(5px);
+  transition: 0.5s ease all;
+}
+ 
+.LangList li {
+    cursor: pointer;
+}
+
+.hero-section {
+    background-image: url(https://www.devicemag.com/wp-content/uploads/2023/03/netflix-error-22004-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.UpperLayer {
+    background-color: rgba(0, 0, 0, 0.642);
+}
