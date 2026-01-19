@@ -39,3 +39,12 @@ body {
 .UpperLayer {
     background-color: rgba(0, 0, 0, 0.642);
 }
+
+
+.TopTenCards {
+  display: flex;
+  position: relative;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
