@@ -15,7 +15,7 @@ body {
   transform: translateY(15px);
   transition: 0.5s ease all;
   opacity: 0;
-  box-shadow: 0px 0px 10px 0.6px rgba(0, 0, 0, 0.521); 
+  box-shadow: 0px 0px 10px 0.6px rgba(0, 0, 0, 0.521);
 }
 
 #Language:checked ~ .LangList {
@@ -23,19 +23,96 @@ body {
   transform: translateY(5px);
   transition: 0.5s ease all;
 }
- 
+
 .LangList li {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .hero-section {
-    background-image: url(https://www.devicemag.com/wp-content/uploads/2023/03/netflix-error-22004-2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url(https://www.devicemag.com/wp-content/uploads/2023/03/netflix-error-22004-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-
 .UpperLayer {
-    background-color: rgba(0, 0, 0, 0.642);
+  background-color: rgba(0, 0, 0, 0.642);
+}
+
+.reason-section {
+  font-family: "Robot", sans-serif;
+}
+
+@media (max-width: 1268px) {
+  .ReasonCard {
+    border: 2px solid gray;
+    color: white;
+    width: 80%;
+    margin: 20px auto;
+    height: 280px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background: linear-gradient(
+      135deg,
+      #0f1b3d 0%,
+      #1b1f4a 35%,
+      #2a1638 65%,
+      #0b0b0f 100%
+    );
+  }
+
+  .ReasonCard h3 {
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .ReasonCard p {
+    text-align: center;
+    width: 80%;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 1268px) {
+  .ReasonCard {
+    border: 2px solid gray;
+    color: white;
+    width: 300px;
+    margin: 20px auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    border-radius: 20px;
+    background: linear-gradient(
+      135deg,
+      #0f1b3d 0%,
+      #1b1f4a 35%,
+      #2a1638 65%,
+      #0b0b0f 100%
+    );
+  }
+
+  .ReasonCard h3 {
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .ReasonCard p {
+    text-align: center;
+    width: 80%;
+    margin-top: 30px auto;
+  }
 }
