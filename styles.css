@@ -40,6 +40,67 @@ body {
   background-color: rgba(0, 0, 0, 0.642);
 }
 
+.footer-section {
+  font-family: "Robot", sans-serif;
+  padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .EmailBox {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid transparent;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .EmailBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+  }
+}
+
+
+.EmailBox button {
+  width: 200px;
+  background-color: red;
+  color: white;
+  width: 150px;
+  padding: 5px;
+  border-radius: 10px;
+  height: 50px;
+}
+
+.EmailBox input {
+  width: 400px;
+  height: 40px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgba(48, 48, 48, 0.571);
+}
+
+.FirstUl li {
+  color: rgb(161, 161, 161);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.SecondUl li {
+  color: rgb(161, 161, 161);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .reason-section {
   font-family: "Robot", sans-serif;
 }
@@ -461,7 +522,6 @@ body {
   font-size: 40px;
   cursor: pointer;
 }
-
 
 .TopTenCards {
   display: flex;
