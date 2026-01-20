@@ -40,6 +40,7 @@ body {
   background-color: rgba(0, 0, 0, 0.642);
 }
 
+
 @media (max-width: 568px) {
   .MovieCard {
     border: 2px solid gray;
@@ -383,5 +384,12 @@ body {
   cursor: pointer;
 }
 
+
+.TopTenCards {
+  display: flex;
+  position: relative;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
 
 
